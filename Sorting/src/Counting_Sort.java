@@ -25,5 +25,6 @@ public class Counting_Sort {
     public static void main(String[] args) {
         int[] sample = {1, 4, 1, 3, 2, 4, 3, 7};
         counting(sample);
+        System.out.println();
     }
 }
