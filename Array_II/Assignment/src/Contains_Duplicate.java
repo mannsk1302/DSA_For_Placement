@@ -1,10 +1,10 @@
 public class Contains_Duplicate {
     public static int checker(int[] sample){
         for(int i = 0; i < sample.length; i++){
-            if(i == i + 1){
-                return 1;
-            }else if(sample[i] != sample[i+1]){
-                return 0;
+            for(int j = i + 1; j < sample.length; j++){
+                if(sample[i] == sample[j]){
+                    return 1;
+                }
             }
         }
         return 0;
